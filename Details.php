@@ -165,16 +165,11 @@
 		$rlshp = $_POST['rlshp'];
 		$studentfullname = "$fnm $snm";
 
-		/*if( !empty($kcpeyr) && !empty($admn) && !empty($fnm) && !empty($mnm) && !empty($lnm) && !empty($doa)&& !empty($kcpe)&& 
-			!empty($rlgn)&& !empty($strm)&& !empty($dom)&& !empty($sex)&& !empty($yob)&&
-			!empty($pfnm)&& !empty($plnm)&& !empty($rsd)&& !empty($ntn)&& !empty($mail)&&
-			!empty($id)&& !empty($mob)&& !empty($rlshp)){
-				*/
-				
-				$insert_to_students_table= "insert into studentdetails (fnm,snm,lnm,doa,adm,kcpe,kcpeyr,rlgn,strm,dom,sex,yob)values
+			
+				$insert_to_students_table= "insert into student (fnm,snm,lnm,doa,adm,kcpe,kcpeyr,rlgn,strm,dom,sex,yob)values
 				('$fnm','$snm','$lnm','$doa','$adm','$kcpe','$kcpeyr','$rlgn','$strm','$dom','$sex','$yob')";
 				
-				$insert_to_parents_table = "insert into parentsdetails (pfnm,plnm,rsd,ntn,mail,id,mob,rlshp,studentnames) values
+				$insert_to_parents_table = "insert into parents (pfnm,plnm,rsd,ntn,mail,id,mob,rlshp,studentnames) values
 				('$pfnm','$plnm','$rsd','$ntn','$mail','$id','$mob','$rlshp','$studentfullname') ";
 				
 					if(mysqli_query($dbconn,$insert_to_students_table)){
@@ -192,9 +187,7 @@
 						
 						die('Error in student\'s table: <br/>'.mysqli_error($dbconn));
 					}
-			//}
-			//else{
-				//echo "<script>alert('All fields are important')</script>";
+			
 		}
 			
 	
