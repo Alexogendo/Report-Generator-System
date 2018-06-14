@@ -1,0 +1,92 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	background:#F0FFF0;
+	background-size: cover;
+	font-family: sans-serif;
+}
+div#title{
+
+	text-align: center;
+	padding: 50px 0 20px;
+	margin: 20px auto;
+}
+div#title h1{
+	margin: 0;
+	padding: 0;
+	color: #262626;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+#maindiv{
+
+	width: 35%;
+	height: 200px;
+	background: #fff;
+	margin:0 auto;
+	border: 2 px solid #fff;
+	box-shadow: 0 15px 20px rgba(0,0,0,.5);
+
+}
+#login{
+
+	float: center;
+	height: 200px;
+	box-sizing: border-box;
+}
+#box{
+
+	width:100%;
+	padding: 0px 0px;
+	height: 200px;
+	background:#fff;
+}
+
+#maindiv p{
+
+	margin: 0; 
+	padding: 0;
+	font-weight: bold;
+	color: black;
+
+}
+#maindiv input{
+
+	margin-bottom: 20px;
+
+}
+
+#maindiv input[type="text"],input[type="password"]{
+	border: none;
+	border-bottom: 2px solid #a6af13;
+	outline: none;
+	height: 40px;
+	width: 60%;
+}
+#maindiv input[type="text"]:focus,
+input[type="password"]:focus{
+
+	border-bottom: 2px solid black;
+}
+#maindiv input[type="submit"]:focus{
+	background: #a6af13;
+
+}
+#maindiv input[type="submit"]:hover{
+	background: green;
+
+}
+#maindiv input[type="submit"]{
+	border: none;
+	outline: none;
+	color: #fff;
+	height: 35px;
+	width: 120px;
+	background: black;
+	cursor: pointer;
+}
+.sheader{
+	text-align: center;
+	margin-top: 40px;
+}
