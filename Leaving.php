@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if(!isset($_SESSION['admin'])){
+
+		header("location: login.php");
+	}
+
+else{
+?>
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -14,7 +23,7 @@
 
 <body>
 	<h2 style="color: maroon; text-align: center"><u>LEAVING CERTIFICATE.</u><h2>
-					<a href="Home.php" style="float: right; margin-top: -35px; font-size: 17px; margin-right: 15px">Home</a>
+					<a href="index.php" style="float: right; margin-top: -35px; font-size: 17px; margin-right: 15px; text-decoration: none; font-weinght:bold;">Home</a>
 					<h4 class="sheader" style="text-shadow: transparent; text-align: center"><i><strong>NYANCHWA BOYS' HIGH SCHOOL.<strong></i><h4>
 		
   					<div class="scrollbar-container" style="margin-top: 8%">
@@ -22,7 +31,7 @@
     								<div id="form">
     									<div id="bat">
     										<div id="logo">
-				<center><img src="Seal.PNG" alt="logo" height="100" width="120"/> </center>
+				<center><img src="images/seal.PNG" alt="logo" height="100" width="120"/> </center>
 		</div>
     		       									 <p>REPUBLIC OF KENYA<br>
 
@@ -90,4 +99,8 @@ Date of Issue ……………………………………<br>
 	</div>
 <script  src="js/index.js"></script>
 	</body>
+
+	<?php  include("includes/copyright.php");?>
+	
 </html>
+<?php } ?>

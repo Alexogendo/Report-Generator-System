@@ -1,0 +1,66 @@
+body {
+    background: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    text-align: center;
+    border: 5px solid gray;
+}
+
+#formel input[type="text"] {
+    width: 50px;
+    text-align: center;
+}
+
+#formel input[type="submit"] {
+    margin-top: 30px;
+    text-align: center;
+    width: 100px;
+    border: none;
+    background: rgb(9, 131, 60);
+    height: 28px;
+    color: whitesmoke;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#formel input[type="Submit"]:hover {
+    background: rgb(102, 209, 182);
+    cursor: pointer;
+}
+
+#links {
+    margin: 10px 0px 0px 1280px;
+    width: auto;
+    height: auto;
+}
+
+#links a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20PX;
+}
+
+#top {
+    text-align: center;
+    align-self: center;
+    margin: 0px 0px 10px 0px;
+}
+
+#searchcointainer {
+    margin-bottom: 20px;
+    margin-left: 1100px;
+}
+
+#seachcontainer input[type="submit"] {
+    height: 50px;
+    border: none;
+    text-align: center;
+    width: 70px;
+    border: none;
+    background: green;
+    height: 28px;
+    color: whitesmoke;
+}
