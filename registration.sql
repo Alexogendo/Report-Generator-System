@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 15, 2018 at 06:57 AM
+-- Generation Time: Jun 15, 2018 at 07:06 AM
 -- Server version: 5.6.40
 -- PHP Version: 7.1.17
 
@@ -1438,7 +1438,6 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`stdnt_id`, `fnm`, `snm`, `lnm`, `doa`, `adm_no`, `kcpe`, `kcpe_yr`, `rlgn`, `strm`, `dom`, `sex`, `yob`) VALUES
 (3, 'James', 'Junior', 'Omwami', '2018-03-20', '56', 351, 2017, 'Christian', '2Y', 'Nyayo', 'M', '2002-12-23'),
-(4, 'Elvis', 'Ian', 'Mutende', '2018-03-20', '154', 340, 2017, 'Christian', '3G', 'Amenya', 'M', '2000-09-28'),
 (5, 'BOKAYO', 'JARSO', 'JATAAN', '2018-06-14', '24', 346, 2011, 'Christian', '1Y', 'Sakawa', 'F', '1997-05-27'),
 (6, 'Peter', 'Makori', 'MATICHA', '0000-00-00', '25', 255, 2014, 'Christian', '3Y', 'State', 'M', '1997-06-23'),
 (7, 'ALEX', 'APONYO', 'Chebet', '0000-00-00', '26', 316, 2013, 'Christian', '3G', 'Nyayo', 'M', '1997-05-27');
@@ -1460,7 +1459,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `admin`, `pass`) VALUES
-(1, 'elvis', 'elvis');
+(1, 'alex', 'alex123');
 
 --
 -- Indexes for dumped tables
